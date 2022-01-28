@@ -22,7 +22,7 @@ env:
   GAR_LOCATION: australia-southeast2 # TODO: update region of the Artifact Registry
   GKE_CLUSTER: autopilot-cluster-1    # TODO: update to cluster name
   GKE_ZONE: australia-southeast2   # TODO: update to cluster zone
-  DEPLOYMENT_NAME: gke-demo # TODO: update to deployment name
+  DEPLOYMENT_NAME: gke-test # TODO: update to deployment name
   REPOSITORY: docker # TODO: update to Artifact Registry docker repository
   IMAGE: dylan-website
 
