@@ -47,7 +47,7 @@ jobs:
       with:
         token_format: 'access_token'
         workload_identity_provider: 'projects/518921962661/locations/global/workloadIdentityPools/dylan-pool/providers/123456789'
-        service_account: 'github-actions@{{secrets.GKE_PROJECT}}.iam.gserviceaccount.com'
+        service_account: 'github-actions@${{secrets.GKE_PROJECT}}.iam.gserviceaccount.com'
 
     - name: Docker configuration
       run: |-
