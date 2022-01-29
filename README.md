@@ -5,7 +5,7 @@ Author: Dylan Klein
 ## What does this pipeline do?
 The demo pipeline builds a simple "hit counter" web app using Python's Flask framework with Redis as a database. It then deploys the dockerised architecture to Google Kubernetes Engine (GKE).
 
-## Architecture Diagram
+## Architecture
 The following is a visual representation of the CICD process.
 ![Architecture Diagram](devops-pipeline.drawio.png)
 
@@ -19,7 +19,8 @@ to:
 ```
 cache = redis.Redis(host='redis', port=6379)
 ```
-!! Don't push this change to your git repository.
+:warning: Don't push this change to your git repository.
+
 2. Run the command `$ docker-compose up` to build the app locally.
 
 ### 2. Authenticate to GCP
