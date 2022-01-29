@@ -27,7 +27,7 @@ cache = redis.Redis(host='redis', port=6379)
 When the workflow is triggered (either via `git push` or otherwise), the first thing that GitHub Actions does is authenticate to GCP via Workload Identity Federation.
 
 ### 3. Build
-The following docker image is then built whenever the `main` branch receives a `git push` via GitHub Actions (Continuous Integration):
+The following docker image is then built via GitHub Actions (Continuous Integration):
 - `dylan-website` (Flask frontend)
 
 ### 4. Publish
